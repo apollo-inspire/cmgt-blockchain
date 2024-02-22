@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708629314196" clover="3.2.0">
-  <project timestamp="1708629314196" name="All files">
+<coverage generated="1708634260609" clover="3.2.0">
+  <project timestamp="1708634260609" name="All files">
     <metrics statements="18" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4" elements="23" coveredelements="21" complexity="0" loc="18" ncloc="18" packages="1" files="4" classes="4"/>
     <file name="cloneArray.js" path="C:\coding\cmgt\cmgt-blockchain\js\cloneArray.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
