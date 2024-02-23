@@ -1,8 +1,8 @@
 function customHash(input){
+    let tempHash = input
 
     // Stap 1: Tekst omzetten naar ASCII waarde
-    let asciiValues = [116,101,120,116];
-
+    let asciiValues = textToAsciiValues(input)
 
     // Stap 2: Alle getallen worden gesplitst en los in een array
     let numberArray = [1,1,6,1,0,1,1,2,0,1,1,6];
@@ -24,8 +24,21 @@ function customHash(input){
     return { hash, asciiValues, numberArray, blocks, blocks2, hashArray };
 }
 
+
+function textToAsciiValues(text){
+    let asciiValues = [];
+    for (var i = 0; i < text.length; i++) {
+        asciiValues.push(text.charCodeAt(i));
+    }
+    return asciiValues;
+}
+
+
 let input = "text";
 let hashedOutput = customHash(input);
 console.log(hashedOutput);
+
+console.log(textToAsciiValues(input));
+
 
 module.exports = customHash
